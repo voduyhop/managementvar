@@ -1,0 +1,24 @@
+noodev:
+  mariadb:
+    datasource:
+      url: ${DATABASE_MARIA_URI}
+      username: ${DATABASE_MARIA_USER}
+      password: ${DATABASE_MARIA_PASSWORD}
+media-server:
+  public-url: ${MEDIA_PUBLIC_SERVER_URL}
+microservice:
+  vars-id-service:
+    url: ${VARS_ID_SERVICE_URL}
+  category-service:
+    url: ${VARS_CATEGORY_SERVICE_URL}
+  land-cms:
+    url: ${VARS_LAND_CMS_URL}
+    public-url: ${VARS_LAND_PUBLIC_URL}
+  vars-cms-service:
+    url: ${VARS_CMS_URL}
+  vars-management-service:
+    url: ${VARS_MANAGEMENT_SERVICE_URL}
+schedule:
+  sync-post-status:
+    enabled: ${SCHEDULE_SYNC_POST_STATUS_ENABLED}
+    cron: ${SCHEDULE_SYNC_POST_STATUS_CRON}

@@ -1,0 +1,16 @@
+microservice:
+  vars-id-service:
+    url: http://10.79.60.2:8500/vid
+  category-service:
+    url: http://10.79.60.2:8500/vcat
+  land-cms:
+    url: http://10.79.60.2:8580/wp-json
+    public-url: http://10.79.60.2:8580
+  vars-cms-service:
+    url: http://10.79.60.2:8500/vcms
+  vars-land-service:
+#    url: http://10.79.60.2:8500/vcms
+schedule:
+  sync-post-status:
+    enabled: false
+    cron: "*/5 * * * * *"

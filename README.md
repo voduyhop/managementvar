@@ -1,1 +1,1 @@
-# managementvar
+# vars-map-service
